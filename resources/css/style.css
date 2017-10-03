@@ -7,6 +7,8 @@ body {
   font-size: 22px;
 }
 
+/* Header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -37,11 +39,15 @@ header nav span a {
   color: white;
 }
 
+/* Main content */
+
 .main {
   width: 1200px;
   padding-top: 70px;
   margin: 0 auto;
 }
+
+/* Main -> Mission content */
 
 .mission {
   background: url("../images/img-mission-background.jpg") no-repeat center;
@@ -63,3 +69,41 @@ header nav span a {
 .mission p {
   margin-bottom: 10px;
 }
+
+/* Main -> Products content */
+
+.products {
+  display: flex;
+  align-content: center;
+}
+
+#productOne .image-content {
+  background: url("../images/img-berryblitz.jpg") no-repeat center;
+  background-size: cover;
+  height: 200px;
+}
+
+#productTwo .image-content {
+  background: url("../images/img-spiced-rum.jpg") no-repeat center;
+  background-size: cover;
+  height: 200px;
+}
+
+#productThree .image-content {
+  background: url("../images/img-donut.jpg") no-repeat center;
+  background-size: cover;
+  height: 200px;
+}
+
+#productFour .image-content {
+  background: url("../images/img-myrtle-ave.jpg") no-repeat center;
+  background-size: cover;
+  height: 200px;
+}
+
+#productFive .image-content {
+  background: url("../images/img-bedford-bizarre.jpg") no-repeat center;
+  background-size: cover;
+  height: 200px;
+}
+/* Main -> Locations content */
