@@ -8,6 +8,20 @@ body {
   padding: 0;
 }
 
+/* flex containers */
+
+.flexrow {
+  display: flex;
+  justify-content: center;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Header */
 
 header {
@@ -43,9 +57,6 @@ header nav span a {
 /* Main content */
 
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 70px;
 }
 
@@ -55,8 +66,6 @@ header nav span a {
   background: url("../images/img-mission-background.jpg") no-repeat center;
   height: 700px;
   width: 1200px;
-  display: flex;
-  align-items: center;
 }
 
 .mission div {
@@ -76,30 +85,21 @@ header nav span a {
 /* Main -> Products content */
 
 .products {
-  display: flex;
-  flex-direction: column;
   width: 1000px;
   margin: 50px 0;
 }
 
-.products .products-header {
-  width: 100%;
-  text-align: center;
-}
-
-.products .products-header h2 {
+.products h2 {
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
-.products .products-header h4 {
-  margin-bottom: 20px;
+.products h4 {
+  margin: 20px 0;
 }
 
-.products .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.product {
+
 }
 
 .space-between-product {
@@ -112,7 +112,6 @@ header nav span a {
 }
 
 .product h4 {
-  text-align: center;
   margin-top: 10px;
 }
 
@@ -144,33 +143,21 @@ header nav span a {
 /* Main -> Locations content */
 
 .locations {
-  background: url("../images/img-locations-background.jpg") no-repeat center;
+  background: url("../images/img-locations-background.jpg") no-repeat;
+  background-size: cover;
   height: 500px;
   width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .locations h2 {
-  /*width: 100%;*/
-}
-
-.locations .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: 0 0 15px 0;
 }
 
 .location {
   height: 300px;
   width: 300px;
-  margin: 15px 20px;
+  margin: 0 20px;
   background-color: black;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 /* Footer */
@@ -182,8 +169,4 @@ footer {
 footer .address {
   height: 200px;
   margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
