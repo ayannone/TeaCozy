@@ -170,5 +170,20 @@ header nav span a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;  
+  justify-content: space-around;
+}
+
+/* Footer */
+
+footer {
+  margin: 20px;
+}
+
+footer .address {
+  height: 200px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
