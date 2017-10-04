@@ -1,10 +1,11 @@
 body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 22px;
+  color: seashell;
   background-color: black;
+  opacity: 0.9;
   margin: 0;
   padding: 0;
-  font-family: "Helvetica", sans-serif;
-  color: seashell;
-  font-size: 22px;
 }
 
 /* Header */
@@ -13,8 +14,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid white;
-  height: 70px;
+  border-bottom: 1px solid seashell;
+  height: 69px;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,15 +37,16 @@ header nav span {
 }
 
 header nav span a {
-  color: white;
+  color: seashell;
 }
 
 /* Main content */
 
 .main {
-  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 70px;
-  margin: 0 auto;
 }
 
 /* Main -> Mission content */
@@ -52,6 +54,7 @@ header nav span a {
 .mission {
   background: url("../images/img-mission-background.jpg") no-repeat center;
   height: 700px;
+  width: 1200px;
   display: flex;
   align-items: center;
 }
@@ -66,7 +69,7 @@ header nav span a {
   margin-top: 10px;
 }
 
-.mission p {
+.mission h4 {
   margin-bottom: 10px;
 }
 
@@ -74,36 +77,68 @@ header nav span a {
 
 .products {
   display: flex;
-  align-content: center;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.products .products-header {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.products .products-header h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.products .products-header h4 {
+  margin-bottom: 20px;
+}
+
+.products .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.space-between-product {
+  width: 50px;
+}
+
+.product .image-content {
+  height: 200px;
+  width: 300px;
+}
+
+.product h4 {
+  text-align: center;
+  margin-top: 10px;
 }
 
 #productOne .image-content {
   background: url("../images/img-berryblitz.jpg") no-repeat center;
   background-size: cover;
-  height: 200px;
 }
 
 #productTwo .image-content {
   background: url("../images/img-spiced-rum.jpg") no-repeat center;
   background-size: cover;
-  height: 200px;
 }
 
 #productThree .image-content {
   background: url("../images/img-donut.jpg") no-repeat center;
   background-size: cover;
-  height: 200px;
 }
 
 #productFour .image-content {
   background: url("../images/img-myrtle-ave.jpg") no-repeat center;
   background-size: cover;
-  height: 200px;
 }
 
 #productFive .image-content {
   background: url("../images/img-bedford-bizarre.jpg") no-repeat center;
   background-size: cover;
-  height: 200px;
 }
+
 /* Main -> Locations content */
