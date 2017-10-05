@@ -54,6 +54,13 @@ header nav span a {
   color: seashell;
 }
 
+.anchor {
+  display: block;
+  height: 70px;
+  margin-top: -70px;
+  visibility: hidden;
+}
+
 /* Main content */
 
 .main {
